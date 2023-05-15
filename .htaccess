@@ -1,0 +1,13 @@
+Options -Indexes
+DirectoryIndex index.php
+
+<IFModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /translate.php?path=$1 [NC,L,QSA]
+</IfModule>
+
+<Files config.php>
+deny from all
+</Files>

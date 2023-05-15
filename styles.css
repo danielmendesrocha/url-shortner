@@ -1,0 +1,53 @@
+body {
+  display:flex;
+  flex-direction: column;
+  background-color: #171a1e;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
+
+.ele-container {
+  background-image: linear-gradient(45deg,#fff 0%,#b8dfe8 90%);
+  filter: drop-shadow(0px 2px 5px gray);
+}
+
+input[type="text"] {    border: 1px solid #b9e0e9;}
+
+h1 {font-size: 5.5em;}
+
+.main-btn {    
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: white;
+  filter:drop-shadow(2px 2px 2px gray);
+  transition: filter .150s ease;
+}
+
+.main-btn:hover {
+  color:white;
+  filter:drop-shadow(1px 1px 1px rgb(211, 210, 210));
+  
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+}
+
+
+body > footer {
+  text-align: center;
+  margin-top:auto;
+}
+
+
+/*override bootstrap to mantain flex. Remove this if toggler button is added*/
+.navbar-expand-lg .navbar-nav {
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.navbar-nav .nav-link {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
